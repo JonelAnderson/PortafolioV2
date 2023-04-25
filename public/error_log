@@ -1,0 +1,1 @@
+[12-Jun-2022 22:57:50 UTC] PHP Fatal error:  Cannot redeclare App\Mail\SendMail::__construct() in /home2/websitea/portafolio.websiteanderson.com/app/Mail/SendMail.php on line 24
