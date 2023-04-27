@@ -41,7 +41,7 @@
 						</form>
 					</div>-->
 					<div class="card-body py-1 table-responsive">
-						<table class="table table-sm  table-hover" id="datatablesSimple">
+						<table class="table table-sm  table-hover">
 							<thead class="table-light">
 								<tr>
 									<th class="text-center">ID</th>
@@ -60,11 +60,11 @@
 								<td class="text-center">{{$item->created_at->diffForHUmans()}}</td>
 								<td class="text-center">
 									<form action="{{ route('correo.destroy',$item->id) }}" method="POST" class="formEliminar">
-										<a class="btn btn-primary  lift btn-sm" href="{{ route('correo.show',$item->id) }}"><i
-									class="fa fa-fw fa-eye"></i> &nbsp;Ver</a>
+										<a class="btn btn-primary  lift btn-sm" href="{{ route('correo.show',$item->id) }}" title="Show"><i
+									class="fa fa-fw fa-eye"></i> &nbsp;</a>
 										@csrf
 										@method('DELETE')
-										<button type="submit" class="btn btn-danger lift btn-sm"><i class="fa fa-fw fa-trash"></i> Delete</button>
+										<button type="submit" class="btn btn-danger lift btn-sm" title="Delete"><i class="fa fa-fw fa-trash"></i></button>
 									</form>
 								</td>
 							</tr>

@@ -60,7 +60,7 @@
                 <!-- Sidenav Link (Users)-->
                 <li class="nav-item">
                     <a class="nav-link" href="/admin/user">
-                        <div class="nav-link-icon"><em class='bx bx-envelope'></em></div>
+                        <div class="nav-link-icon"><em class='bx bx-user'></em></div>
                         Usuario
                     </a>
                 </li>

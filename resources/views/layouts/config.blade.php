@@ -36,7 +36,7 @@
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
 		<script src="{{asset('/admin/js/datatable.js')}}"></script>
         @stack('scripts')
-        <script>
+        <!-- <script>
             let html = document.getElementById("current_date");
     
             setInterval(function(){
@@ -62,7 +62,7 @@
     
                 html.innerHTML = day+"/"+month+"/"+year +"&nbsp; &nbsp;"+horas+" : "+minutos+" : "+segundos;
         });
-    </script>
+    </script> -->
 
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script>

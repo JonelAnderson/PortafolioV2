@@ -36,9 +36,9 @@
 							<button class="btn btn-outline-primary btn-sm" type="submit">Buscar</button>
 						</form>
 					</div>-->
-					<div class="card-body py-2">
-						<table class="table table-sm table-bordered table-hover " id="datatablesSimple">
-							<thead>
+					<div class="card-body py-1 table-responsive">
+						<table class="table table-sm  table-hover">
+							<thead class="table-light">
 								<tr>
 									<th class="text-center">Titulo</th>
 									<th class="text-center">Imagen</th>

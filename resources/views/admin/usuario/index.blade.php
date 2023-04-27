@@ -54,10 +54,10 @@
                                         <td class="text-center">{{$item->email}}</td>
                                         <td class="text-center">
                                             <form action="{{ route('user.destroy',$item->id) }}" method="POST" class="formEliminar">
-                                                <a class="btn btn-warning  lift btn-sm" href="{{ route('user.edit',$item->id) }}"><i class="fa fa-fw fa-edit"></i> Edit</a>
+                                                <a class="btn btn-warning  lift btn-sm" href="{{ route('user.edit',$item->id) }}" title="Edit"><i class="fa fa-fw fa-edit"></i></a>
                                                 @csrf
                                                 @method('DELETE')
-                                                <button type="submit" class="btn btn-danger lift btn-sm"><i class="fa fa-fw fa-trash"></i> Delete</button>
+                                                <button type="submit" class="btn btn-danger lift btn-sm" title="Delete"><i class="fa fa-fw fa-trash"></i></button>
                                             </form>
                                         </td>
                                     </tr>
