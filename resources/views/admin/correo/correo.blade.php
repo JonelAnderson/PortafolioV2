@@ -72,6 +72,7 @@
 							</tbody>
 						</table>
 					</div>
+					{{ $correos->links() }}
 				</div>
             </div>
         </main>

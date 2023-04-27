@@ -29,8 +29,9 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::get('/main', function () {
         return view('admin.desktop');
     });
-    
+    Route::resource('/user', App\Http\Controllers\Admin\UserController::class);
     Route::resource('/home', App\Http\Controllers\Admin\HomeController::class);
+
     Route::resource(
         '/about',
         App\Http\Controllers\Admin\AboutController::class

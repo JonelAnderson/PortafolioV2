@@ -124,7 +124,7 @@ class PortafolioController extends Controller
 
                 if($request->hasFile('photo')){
 
-                    $rutaAnterior = public_path('public/images/portafolio/'.$foto_anterior);
+                    $rutaAnterior = public_path('images/portafolio/'.$foto_anterior);
                     if(file_exists($rutaAnterior)){ unlink(realpath($rutaAnterior)); }
 
                     $picture = $request->file('photo');
@@ -132,7 +132,7 @@ class PortafolioController extends Controller
                     $nuevonombre = 'portafolio'.time().'.'.$picture->guessExtension();
                     Image::make($picture->getRealPath())
                     ->fit(2048,1180,function($constraint){ $constraint->upsize();  })
-                    ->save( public_path('public/images/portafolio/'.$nuevonombre));
+                    ->save( public_path('images/portafolio/'.$nuevonombre));
 
                     $portafolio->photo = $nuevonombre;
                 }

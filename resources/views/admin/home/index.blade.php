@@ -66,7 +66,7 @@
 							</div>
 							<!-- Save changes button-->
 							<div style="float: right;" class="pt-4">
-							    <a href="/public/admin/main" class="btn btn-danger lift">Cancelar</a>
+							    <a href="/admin/main" class="btn btn-danger lift">Cancelar</a>
 							    <button class="btn btn-primary lift" type="submit" >Save changes</button>
 							</div>
 							
