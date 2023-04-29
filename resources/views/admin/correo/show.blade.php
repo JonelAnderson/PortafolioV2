@@ -12,7 +12,7 @@
 					<div class="card-header">
 						<span class="card-title">Correo de: <strong>{{ $correo->name }}</strong></span>
 						<p class="small float-left"> Recibido {{$correo->created_at->diffForHUmans()}}, el {{$correo->created_at}} </p>
-						<a href="/admin/correo" class="btn btn-danger lift">{{ __('Close') }}</a>
+						<a href="/page/admin/correo" class="btn btn-danger lift">{{ __('Close') }}</a>
 					</div>
                     <div class="card">
                         <div class="card-body">
