@@ -20,11 +20,12 @@
         <script data-search-pseudo-elements="" defer="" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" crossorigin="anonymous"></script>
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+       
     </head>
     <body class="nav-fixed py-2">
 
             @yield('content')
-
 
         <script src="{{asset('code/lib/codemirror.js')}}"></script>
          <script src="{{asset('code/mode/xml/xml.js')}}"></script>

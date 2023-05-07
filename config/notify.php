@@ -2,6 +2,11 @@
 
 return [
 
+    'default_options' => [
+        'placement' => 'bottom-right',
+    ],
+
+
     /*
     |--------------------------------------------------------------------------
     | Notify Theme
@@ -48,6 +53,7 @@ return [
     |
     */
 
+    
     'preset-messages' => [
         // An example preset 'user updated' Connectify notification.
         'user-updated' => [

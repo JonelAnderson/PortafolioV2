@@ -45,6 +45,10 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
         App\Http\Controllers\Admin\ExperienceController::class
     );
     Route::resource(
+        '/service',
+        App\Http\Controllers\Admin\ServiceController::class
+    );
+    Route::resource(
         '/portafolio',
         App\Http\Controllers\Admin\PortafolioController::class
     );
@@ -54,8 +58,8 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
         App\Http\Controllers\Admin\CorreoController::class
     );
 
-    Route::get('/services','App\Http\Controllers\Admin\ConfigController@Service')->name('service.config');
-    Route::post('/services','App\Http\Controllers\Admin\ConfigController@save_cambios')->name('save_cambios.config');
+    //Route::get('/services','App\Http\Controllers\Admin\ConfigController@Service')->name('service.config');
+    //Route::post('/services','App\Http\Controllers\Admin\ConfigController@save_cambios')->name('save_cambios.config');
 });
 
 //Rutas publicas

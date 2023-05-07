@@ -38,7 +38,7 @@
 
                 <!-- Sidenav Link (Services)-->
                 <li class="nav-item">
-                    <a class="nav-link" href="/page/admin/services">
+                    <a class="nav-link" href="/page/admin/service">
                         <div class="nav-link-icon"><em class='bx bx-grid-alt'></em></div>
                         Services
                     </a>

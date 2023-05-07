@@ -2,9 +2,37 @@
 
 @section('content')
 <!-- ===== Main Container Start ===== -->
+<!--==================== HEADER ====================-->
+<header class="header" id="header">
+    <nav class="nav container">
+        <!-- <a href="#" class="nav__logo">
+            Anderson <span>Sac</span>
+        </a> -->
+        <div class="logo">
+            <a href="#"><span>A</span>nders</a>
+        </div>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li><a href="#" class="active" id="enlace-inicio"> Home</a></li>
+                <li><a href="#" id="enlace-about"> About</a></li>
+                <li><a href="#" id="enlace-services">Services</a></li>
+                <li><a href="#" id="enlace-portafolio">Portafolio</a></li>
+                <li><a href="#" id="enlace-contact">Contact</a></li>
+            </ul>
+            <!--Close button-->
+            <div class="nav__close" id="nav-close">
+                <i class='bx bx-x'></i>
+            </div>
+        </div>
+        <!--Toggle button-->
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+</header>
 <div class="main-container">
     <!-- ===== Aside Start ===== -->
-    <div class="aside">
+    <!-- <div class="aside">
         <div class="logo">
             <a href="#"><span>A</span>nders</a>
         </div>
@@ -18,7 +46,7 @@
             <li><a href="#" id="enlace-portafolio"><i class="fa fa-briefcase"></i>Portafolio</a></li>
             <li><a href="#" id="enlace-contact"><i class="fa fa-comments"></i>Contact</a></li>
         </ul>
-    </div>
+    </div> -->
     <!-- ===== Aside End ===== -->
     <!-- ===== Main Content Start ===== -->
     <div class="main-content">
@@ -172,7 +200,30 @@
         </section>
         <!-- ===== About Section End ===== -->
         <!-- ===== Services Section Start ===== -->
-        @include('service')
+        <section class="service section" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Services</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- ===== Service item Start ====== -->
+                    @foreach($services as $service)
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner">
+                            <div class="icon">
+                                <i class="fa {{$service->image_service}}"></i>
+                            </div>
+                            <h4>{{$service->title}}</h4>
+                            <p>{{$service->description}}</p>
+                        </div>
+                    </div>
+                    @endforeach
+                    <!-- ===== Service item End ====== -->
+                </div>
+            </div>
+        </section>
         <!-- ===== Services Section End ===== -->
         <!-- ===== Portfolio Section Start ===== -->
         <section class="portfolio section" id="portafolio">

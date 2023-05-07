@@ -48,7 +48,7 @@ class FrontController extends Controller
 			return back();
         } catch (\Exception $e) {
 			notify()->error('Hubo un error al enviar el mensaje, intente de nuevo! 🥺');
-            return back()->with('success','Error al enviar el mensaje, intente de nuevo!');
+            return back()->with('error','Error al enviar el mensaje, intente de nuevo!');
         }
     }
 }

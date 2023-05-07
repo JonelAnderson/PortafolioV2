@@ -27,14 +27,12 @@
 
         @yield('content')
 
-        <x:notify-messages />
+        <x-notify::notify />
 		@notifyJs
         <!-- ===== JS Files ===== -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
         <script src="{{asset('js/script.js')}}"></script>
         <script src="{{asset('js/style-switcher.js')}}"></script>
-		
-        
     </body>
 </html>
